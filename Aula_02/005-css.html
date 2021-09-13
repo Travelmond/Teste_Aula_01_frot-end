@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispaly e visibilidade</title>
+    <style>
+        p{
+            color: red;
+        }
+        span{
+            display:block
+        }
+        p.exp-1{
+            display: block;
+        }
+        p.exp-2{
+            display: inline;
+        }
+        p.exp-3{
+            display: inline-block;
+        }
+        p.exp-4{
+            display: none;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <span>
+        abc
+    </span>
+    <div>
+        <!--exp1-->
+        <div>
+        <p class="exp-1">
+            Texto
+        </p>
+        </div>
+
+        <!--exp2-->
+        <div>
+            Texto 2 abc
+        <p class="exp-2">
+            Texto
+        </p>
+        Texto 2 abc
+        </div>
+
+        <!--exp3-->
+        <div>
+        <p class="exp-3">
+            Texto
+        </p>
+        </div>
+
+        <!--exp4-->
+        <div>
+        <p class="exp-4">
+            Texto
+        </p>
+        </div>
+    </div>
+</body>
+</html>

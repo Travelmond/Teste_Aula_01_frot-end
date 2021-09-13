@@ -9,9 +9,41 @@
 <body>
     <a href="ListagemELinks.html">Voltar</a>
 
-    <h1>Home</h1>
+    <h1 class="minha-class" id="primeiro-id">Home</h1>
 
-    <img src="Imagens/home.png" alt="Imagem de uma casa, que representa a palavra home" width="500" height="600" />
+    <img class="minha-class" src="Imagens/home.png" alt="Imagem de uma casa, que representa a palavra home" width="300" height="200" />
 
+    <form>
+        <label for="name">Name
+            <input type="text" id="name" value="Insira o seu nome completo">
+        </label>
+        <label for="email">Email
+            <input type="email" id="email" required />
+        </label>
+    <div>
+        <input type="radio" name="preco" value="150">R$ 150,00
+        <input type="radio" name="preco" value="200">R$ 200,00
+        <input type="radio" name="preco" value="250">R$ 250,00
+        <input type="radio" name="preco" value="300">R$ 300,00
+    </div>
+    <div>
+        <label>Selecione a Cidade:
+            <select>
+                <option value="" selected>Selecione uma cidade</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Belo Horizonte">Belo Horizonte</option>
+            </select>
+        </label>
+        <button>Enviar Formulário</button>
+    </div>
+
+    <div>
+        <label>Digite seu comentário
+            <textarea></textarea>
+        </label>
+    </div>
+    <button>Enviar Formulário</button>
+    </form>
 </body>
 </html>
